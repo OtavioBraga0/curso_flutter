@@ -94,13 +94,7 @@ class _ConverterRouteState extends State<ConverterRoute> {
     }).toList();
 
     return ListView(
-      children: <Widget>[
-        DropdownButton(
-          items: List<DropdownMenuItem>(unitWidgets.length),
-          value: unitWidgets,
-          onChanged: (value) {},
-        ),
-      ],
+      children: unitWidgets,
     );
   }
 }
