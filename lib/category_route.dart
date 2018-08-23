@@ -35,6 +35,16 @@ class _CategoryRouteState extends State<CategoryRoute> {
     'Energy',
     'Currency',
   ];
+  static const _baseIcons = <IconData>[
+    Icons.straighten,
+    Icons.aspect_ratio,
+    Icons.opacity,
+    Icons.cake,
+    Icons.timer,
+    Icons.sd_storage,
+    Icons.battery_charging_full,
+    Icons.attach_money
+  ];
   static const _baseColors = <ColorSwatch>[
     ColorSwatch(0xFF6AB7A8, {
       'highlight': Color(0xFF6AB7A8),
@@ -78,7 +88,7 @@ class _CategoryRouteState extends State<CategoryRoute> {
       _categories.add(Category(
         name: _categoryNames[i],
         color: _baseColors[i],
-        iconLocation: Icons.cake,
+        iconLocation: _baseIcons[i],
         units: _retrieveUnitList(_categoryNames[i]),
       ));
     }
